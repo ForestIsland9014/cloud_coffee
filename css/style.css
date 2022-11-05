@@ -73,6 +73,7 @@ div.center div.elm1 {
 
 h3.headline {
   margin-left: 8px;
+  padding: 3px;
 }
 p.headline {
   font-weight: 500;
@@ -139,7 +140,7 @@ ol.explanation2 li {
   border: 3px solid #1e3233;
 }
 .timer_style p {
-  padding: 31%  0px;
+  padding: 30%  0px;
   font-size: 160%;
 }
 
