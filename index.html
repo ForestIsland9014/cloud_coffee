@@ -43,6 +43,8 @@
           return new Promise(resolve => setTimeout(resolve, msec));
         }
 		async function coffee_timer(n, id){
+			document.getElementById(id).setAttribute('onclick', "return false;");
+			
 			var temp = document.getElementById(id).style;
 			var p_html_temp = document.getElementById(id).children[0].innerHTML;
 			var p_style_temp = document.getElementById(id).children[0].style;
@@ -69,6 +71,7 @@
 			document.getElementById(id).style = temp;
 			document.getElementById(id).children[0].innerHTML = p_html_temp;
 			document.getElementById(id).children[0].style = p_style_temp;
+			document.getElementById(id).setAttribute('onclick', "coffee_timer(" + n + ", this.id)");
 		}
 	</script>
 </head>
